@@ -1,0 +1,231 @@
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+
+
+.container{
+    display: flex;
+    
+}
+
+.small-container{
+    margin-left: 5rem;
+    width: 53rem;
+    
+}
+
+.head{
+    display: flex;
+    margin-left: 9rem;
+}
+
+.o{
+    font-weight: 300;
+    font-family: Josefin Sans;
+    font-size: 3rem;
+    color: hsl(0, 87%, 79%);
+}
+
+.base-box{
+    margin-top: 2.3rem;
+    margin-left: 10px;
+}
+
+.base{
+    font-family: Josefin Sans;
+    font-weight: bolder;
+    letter-spacing: 3px;
+}
+
+.appa{
+    margin-top: -0.8rem;
+}
+
+.content{
+    margin-top: 7rem;
+    margin-left: 9rem;
+    width: 28rem;
+}
+
+.we{
+    font-family: Josefin Sans;
+    font-size: 3rem;
+    letter-spacing: 10px;
+    font-weight: 300;
+    color: hsl(0, 36%, 70%);
+}
+
+.coming{
+    margin-top: -0.75rem;
+    font-weight: 600;
+    letter-spacing: 18px;
+    color: black;
+}
+
+.text{
+    color: hsl(0, 36%, 70%);
+    font-family: Josefin Sans;
+    font-size: 16px;
+    line-height: 1.75rem;
+}
+
+#email {
+    margin-top: 2rem;
+    width: 90%;
+    height: 50px;
+    border-radius: 50px;
+    padding-left: 2rem;
+    border: 1px solid  hsl(0, 36%, 70%);
+    background: url("images/icon-arrow.svg") no-repeat right;
+}
+
+
+::placeholder { 
+    color:  hsl(0, 36%, 70%);
+}
+
+.hero{
+    width: 45%;
+}
+
+.search form{
+    position: relative;
+}
+
+form input:last-child{
+    margin-top: 3rem;
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    top: -15px;
+    right: 0.60rem;
+    padding: 16px 50px;
+    border-radius: 2rem;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%),  hsl(0, 74%, 74%));
+}
+
+form input:last-child:hover{
+    background: linear-gradient(135deg,hsl(0, 100%, 93%),hsl(0, 100%, 82%));
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.51);
+    -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.51);
+    box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.51);
+}
+
+.error{
+    display: none;
+    position: relative;
+    top: -8.25vh;
+    left: 35vh;
+}
+
+.output{
+    margin-left: 1.5rem;
+    margin-top: 10px;
+    font-family: Josefin Sans;
+}
+
+.hero-mobile{
+    display: none;
+    background-size: contain;
+}
+
+ @media (max-width: 376px){
+   .container{
+    display: block;
+   }
+
+   .small-container{
+    width: 0px;
+    margin: 0 0 0 1.2rem;
+   }
+
+   .hero{
+    display: none;
+   }
+
+   .hero-mobile{
+    display: block;
+    width: 100%;
+    position: relative;
+    top: -24rem;
+   }
+
+   .head{
+    position: absolute;
+    top: -1.5rem;
+    left: -8rem;
+   }
+
+   .o{
+    margin-top: 45px;
+    font-size: 2rem;
+   }
+
+   .base{
+    font-size: 0.75rem;
+   }
+
+   .content{
+    position: relative;
+    right: 16rem;
+    top: 10rem;
+   }
+
+    .big-text{
+        position: relative;
+        top: 5rem;
+        left: 4rem;
+    }
+
+    .we{
+        font-size: 35px;
+        text-align: center;
+        letter-spacing: 5px;
+    }
+
+   .text{
+    width: 24rem;
+    position: relative;
+    left: 5.5rem;
+    top: 5rem;
+    font-size: small;
+    text-align: center;
+   } 
+
+   #email{
+    position: relative;
+    top: 4rem;
+    left: 8rem;
+    width: 60%;
+    height: 2.5rem;
+    }
+
+    #submit{
+        position: absolute;
+        top: 3.05rem;
+        height: 0.65rem;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .error{
+        position: relative;
+        top: 0.2rem;
+    }
+
+    .output{
+        position: relative;
+        left: 8rem;
+        top: 4rem;
+    }
+
+   
+    
+}
